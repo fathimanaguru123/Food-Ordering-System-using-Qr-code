@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunasgrill</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.3/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    section {
+        padding: 4rem 0;
+      }
+      h1 {
+        font-size: 3rem;
+        color: #FFFFFF; 
+      }
+      h2 {
+        font-size: 2.5rem;
+        color: #FFFFFF; 
+      }
+      p {
+        margin: 1rem 0;
+        color: #FFFFFF; 
+      }
+  
+      .nav-link {
+        padding: 1rem 1.5rem;
+        color: #D1D5DB;
+        font-size: 1.2rem;
+        font-weight: 500;
+        border-bottom: 4px solid transparent;
+        transition: border-color 0.3s ease-in-out;
+      }
+      
+      .nav-link:hover {
+        color: #34D399;
+        border-color: #34D399;
+      }
+      .btn-sign-up {
+        padding: 0.75rem 1.5rem;
+        color: #FFF;
+        font-size: 1.2rem;
+        font-weight: 500;
+        background-color: #10B981; 
+        border-radius: 0.5rem;
+        transition: background-color 0.3s ease-in-out;
+      }
+      
+      .btn-sign-up:hover {
+        background-color: #059669;
+      }
+
+      .btn-email-us {
+        padding: 0.75rem 1.5rem;
+        color: #FFF;
+        font-size: 1.2rem;
+        font-weight: 500;
+        background-color: #10B981; 
+        border-radius: 0.5rem;
+        margin-top: 2rem;
+        transition: background-color 0.3s ease-in-out;
+      }
+      
+      .btn-email-us:hover {
+        background-color: #2563EB; 
+      }
+      
+      #home {
+        background-color: #1F2937;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem 0;
+      }
+      
+      #home img {
+        width: 35%;
+        height: auto;
+        object-fit: cover;
+        margin-left: auto;
+      }
+      
+      nav {
+        background-color: #383b41;
+        
+      }
+      
+      .nav-link {
+        color: #376bb8; 
+      }
+      
+      .nav-link:hover {
+        color: #34D399; 
+      }
+      
+      .btn-sign-up {
+        padding: 0.75rem 1.5rem;
+        color: #FFF;
+        font-size: 1.2rem;
+        font-weight: 500;
+        background-color: #10B981; 
+        border-radius: 0.5rem;
+        margin-top: 2rem;
+        transition: background-color 0.3s ease-in-out;
+      }
+        
+      .btn-sign-up:hover {
+        background-color: #059669;
+      }
+      
+      .btn-email-us {
+        background-color: #3B82F6;       }
+      
+      .btn-email-us:hover {
+        background-color: #2563EB; 
+      }
+  
+      #about {
+        background-color: #1f385f;
+        color: rgb(255, 255, 255); 
+      }
+  
+      #contact {
+        background-color: #4B5563;
+        color: white;
+      }
+      @media (max-width: 640px) {
+        
+        .text-center {
+          text-align: left;
+        }
+        .float-left {
+          float: none;
+        }
+        .mr-8 {
+          margin-right: 0;
+        }
+      }
+      
+      @media (min-width: 640px) and (max-width: 1024px) {
+       
+        .text-xl {
+          font-size: 1.5rem;
+        }
+      }
+      
+      @media (min-width: 1024px) {
+        
+        .text-4xl {
+          font-size: 3.5rem;
+        }
+      }
+      .social-icons {
+        display: flex;
+    }
+    
+    .social-icons a {
+        margin-right: 1rem; 
+    }
+    
+      
+  
+
+  </style>
+</head>
+<body class="bg-gray-900">
+
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+      <a href="#" class="flex items-center py-4 px-2">
+        <img src="Lunasgrill.png" alt="Logo"class="h-8 mr-2">
+        <span class="font-semibold text-gray-500 text-lg">Lunasgrill</span>
+      </a>
+      <div class="hidden md:flex space-x-1">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="hidden md:flex space-x-3">
+        <a href="#" class="btn-sign-up">Sign Up</a>
+      </div>
+      <div class="md:hidden flex items-center">
+        <button class="outline-none mobile-menu-button">
+          <svg class="w-6 h-6 text-gray-500 hover:text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="w-full text-center py-16" id="home">
+    <div>
+      <img src="mainindextemplate.jpg" alt="Placeholder Image" class="float-left mr-8">
+    </div>
+    <div class="text-left px-8">
+      <h1 class="text-4xl font-bold text-gray-300">Welcome to Lunasgrill</h1>
+      <p class="text-xl text-gray-400 mt-4">Explore our world of flavors.</p>
+      <p class="text-lg text-gray-400 mt-4">Lunasgrill offers a unique blend of tastes. We bring together the best of various cuisines to offer a delightful dining experience. Our journey began with a simple vision: to create a welcoming space where friends and families can come together to savor delicious food made with love and care. With a commitment to using only the freshest, locally-sourced ingredients, our chefs artfully blend traditional recipes with innovative techniques to create dishes that are both comforting and captivating.</p>
+      <button class="text-lg text-blue-400 mt-4 hover:text-blue-500">Click on the Logo Up</button>
+    </div>
+  </div>
+  
+
+  <section class="py-8 px-4" id="about">
+    <h2 class="text-2xl font-bold text-center text-white mb-8">About Us</h2>
+    <p class="text-center text-white text-lg">Lunasgrill offers a unique blend of tastes. We bring together the best of various cuisines to offer a delightful dining experience.
+        Our journey began with a simple vision: to create a welcoming space where friends and families can come together to savor delicious food made with love and care. With a commitment to using only the freshest, locally-sourced ingredients, our chefs artfully blend traditional recipes with innovative techniques to create dishes that are both comforting and captivating.
+    </p>
+  </section>
+
+  <section class="py-8 px-4" id="contact">
+    <h2 class="text-2xl font-bold text-center text-white mb-8">Contact Us</h2>
+    <p class="text-center text-white text-lg">For inquiries or reservations, please contact us.</p>
+    <p class="text-center text-white text-lg">For more details:</p>
+    <div class="flex justify-center items-center mt-4">
+        <a href="mailto:contact@lunasgrill.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com" class="text-white mx-4"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" class="text-white"><i class="fab fa-facebook"></i></a>
+    </div>
+</section>
+
+
+  <div class="fixed inset-0 bg-black bg-opacity-50 overflow-y-auto h-full w-full hidden" id="loginModal">
+    <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+      <div class="mt-3 text-center">
+        <div class="mt-2 px-7 py-3">
+          <form id="loginForm">
+            <div class="mb-6">
+              <input type="email" name="email" placeholder="Email" required class="w-full px-3 py-2 border rounded">
+            </div>
+            <div class="mb-6">
+              <input type="password" name="password" placeholder="Password" required class="w-full px-3 py-2 border rounded">
+            </div>
+            <div class="flex justify-between mb-6">
+              <a href="#" class="text-sm text-blue-500 hover:underline" id="switchToRegister">I'm new here</a>
+            </div>
+            <button type="submit" class="w-full py-2 px-4 bg-green-500 text-white rounded hover:bg-green-400" onclick="mySubmit()">Login</button>
+          </form>
+          <!-- Register button added here -->
+          <div class="mt-4">
+            <a href="#" class="block w-full py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-400" onclick="myRegister()">Register</a>
+          </div>
+        </div>
+        <div class="mt-2"></div>
+        <span class="absolute top-0 right-0 p-4" id="modalClose">
+          <button aria-label="Close modal">
+            <svg class="w-6 h-6 text-gray-900" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M6 18L18 6M6 6l12 12"></path></svg>
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const mobileBtn = document.querySelector("button.mobile-menu-button");
+    mobileBtn.addEventListener("click", () => {
+      const menu = document.querySelector(".md:hidden");
+      menu.classList.toggle("hidden");
+    });
+
+    const signUpBtn = document.querySelector("a[href='#']");
+    const loginModal = document.getElementById("loginModal");
+    const modalClose = document.getElementById("modalClose");
+
+    signUpBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      loginModal.classList.remove("hidden");
+    });
+
+    modalClose.addEventListener("click", () => {
+      loginModal.classList.add("hidden");
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        window.location.href = "index.html"; 
+      });
+      function myRegister(){
+        window.location.href="register.html"
+      }
+      
+
+
+      
+  </script>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      document.getElementById('home').scrollIntoView();
+    });
+  </script>
+  
+</body>
+</html>
